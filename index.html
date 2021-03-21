@@ -4,6 +4,25 @@
 <body style="background-color:powderblue;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  background: powderblue;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Style the header */
+.header {
+  background-color: powderblue;
+  padding: 20px;
+  text-align: center;
+}
+
 body {font-family: Times New Roman;}
 
 /* Style the tab */
@@ -46,7 +65,8 @@ body {font-family: Times New Roman;}
 </head>
 <body>
 
-<h2>Welcome To My Website!</h2>
+<div class="header">
+<h1>Welcome To My Website!</h1>
 <p>Travel around the site through tabs:</p>
 
 <div class="tab">
@@ -58,14 +78,14 @@ body {font-family: Times New Roman;}
 </div>
 
 <div id="About Me" class="tabcontent">
-  <h3>A Little About Me</h3>
-  <p>My name is McArthur Posey. I am currently enrolled at Southwestern University in pursuit of earning my Computer Programming Technology Degree. I currently serve in the United States Air Force. My job title is Loadmaster. I am married with two children, a boy and a girl.</p>
+<h3>A Little About Me</h3>
+<p> My name is McArthur Posey. I am currently enrolled at Southwestern University in pursuit of earning my Computer Programming Technology Degree. I currently serve in the United States Air Force. My job title is Loadmaster. I am married with two children, a boy and a girl.</p>
   <p>A few things in life I enjoy are video games, Marvel movies and relaxing on a beach whenever I can find one. I also am very interested in technology and all the advances that it is making. Ever since I was a child I was interested in computers. I would always take apart my mother's laptops and try to upgrade their RAM or Hard Drives just doing the basic things. So, I decided why not try and get a degree in a field you love and so here I am creating a website and it's been great so far.</p>
 </div>
 
 <div id="Chill Music" class="tabcontent">
   <h3>Enjoy Some Relaxing Music</h3>
-  <p><iframe width="1280" height="720" src="https://www.youtube.com/embed/_tV5LEBDs7w?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p> 
+  <p><iframe width="100%" height="480" src="https://www.youtube.com/embed/_tV5LEBDs7w?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p> 
 </div>
 
 <div id="Links" class="tabcontent">
@@ -81,44 +101,175 @@ body {font-family: Times New Roman;}
 
 <div id="Pictures" class="tabcontent">
 <style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+img {
+  vertical-align: middle;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "Previous" to the Left */
+.prev {
+  Left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
   content: "";
-  clear: both;
   display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
   </style>
-  <h5>A Few Photos Of Things I Enjoy</h5>
-<div class="row">
-  <div class="column">
-    <img src="https://static.theceomagazine.net/wp-content/uploads/2019/06/12110705/Iceland-700x467.jpg" alt="Beautiful" width=100%/>
+<h2 style="text-align:center">A Few Photos Of Things I Enjoy</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://static.theceomagazine.net/wp-content/uploads/2019/06/12110705/Iceland-700x467.jpg" alt="Beautiful" width=100%>
   </div>
-  <div class="column">
-    <img src="https://images.immediate.co.uk/production/volatile/sites/3/2019/04/Avengers-Endgame-Banner-2-de7cf60.jpg?webp=true&quality=90&resize=620%2C413" alt="Avengers" width=100%/>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://images.immediate.co.uk/production/volatile/sites/3/2019/04/Avengers-Endgame-Banner-2-de7cf60.jpg?webp=true&quality=90&resize=620%2C413" style="width:100%">
   </div>
-  <div class="column">
-    <img src=https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/s6ksw4ohom4xemkq_1594986268.jpeg?tr=w-700,h-467 alt="Ghost of Tushima" width=100%/>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://cdn.mos.cms.futurecdn.net/jKyZh7AmtzFheyg3GWUn3k-970-80.jpg.webp" style="width:100%">
   </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://media1.tenor.com/images/e660d003ad9e2336cc500fd2853cc2a5/tenor.gif" style="width:100%">
   </div>
-  <div class="column">
-    <img src=https://media1.tenor.com/images/e660d003ad9e2336cc500fd2853cc2a5/tenor.gif?itemid=7950837 width=100%/>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://reviewitweb.files.wordpress.com/2017/03/parasyte1.png?w=615&h=312&crop=1" style="width:100%">
   </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://static2.raru.co.za/cover/2018/06/25/6722428-m.jpg?v=1529925974" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://static.theceomagazine.net/wp-content/uploads/2019/06/12110705/Iceland-700x467.jpg" style="width:100%" onclick="currentSlide(1)" alt="Beautiful Scenary">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://images.immediate.co.uk/production/volatile/sites/3/2019/04/Avengers-Endgame-Banner-2-de7cf60.jpg?webp=true&quality=90&resize=620%2C413" style="width:100%" onclick="currentSlide(2)" alt="Avengers">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.mos.cms.futurecdn.net/jKyZh7AmtzFheyg3GWUn3k-970-80.jpg.webp" style="width:100%" onclick="currentSlide(3)" alt="Ghost of Tushima">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://media1.tenor.com/images/e660d003ad9e2336cc500fd2853cc2a5/tenor.gif" style="width:100%" onclick="currentSlide(4)" alt="Peaceful Sunsets">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://reviewitweb.files.wordpress.com/2017/03/parasyte1.png?w=615&h=312&crop=1" style="width:100%" onclick="currentSlide(5)" alt="Parasyte Anime (Highly Recommend)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://static2.raru.co.za/cover/2018/06/25/6722428-m.jpg?v=1529925974" style="width:100%" onclick="currentSlide(6)" alt="King T'Challa (RIP)">
+    </div>
+  </div>
+</div>
 </div>
 
 <div id="How To" class="tabcontent">
 <h5>Instructional Videos</h5>
 <p>I have always wanted to build my own PC since I was a child and when I first made an attempt to build one, I needed a video to get me started. I thought I'd share that same video.</p>
-<p><iframe width="902" height="507" src="https://www.youtube.com/embed/gO-V8E9MIBg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p><iframe width="100%" height="480" src="https://www.youtube.com/embed/gO-V8E9MIBg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 <p>Things Needed for a starter PC</p>
 <p><ol>
   <li>Case</a></li>
@@ -135,7 +286,7 @@ body {font-family: Times New Roman;}
 </p>
 
 <p>
-<img src="https://cdn.mos.cms.futurecdn.net/gCRy5w2W4g8K6Au2cd2Y7C-320-80.jpg" alt="Gaming PC build guide 2021" class=" block-image-ads hero-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" srcset="https://cdn.mos.cms.futurecdn.net/gCRy5w2W4g8K6Au2cd2Y7C-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/gCRy5w2W4g8K6Au2cd2Y7C-480-80.jpg 480w, https://cdn.mos.cms.futurecdn.net/gCRy5w2W4g8K6Au2cd2Y7C-650-80.jpg 650w, https://cdn.mos.cms.futurecdn.net/gCRy5w2W4g8K6Au2cd2Y7C-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/gCRy5w2W4g8K6Au2cd2Y7C-1024-80.jpg 1024w" sizes="(min-width: 1000px) 970px, calc(100vw - 40px)" data-original-mos="https://cdn.mos.cms.futurecdn.net/gCRy5w2W4g8K6Au2cd2Y7C.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/gCRy5w2W4g8K6Au2cd2Y7C.jpg">
+<img src="https://images.hothardware.com/contentimages/newsitem/52077/content/small_Make-A-Wish-For-Doug-gaming-pc-build-parts.jpg" width="100%" height="600">
 
   <script>
 function openCity(evt, cityName) {
@@ -151,8 +302,36 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 </script>
    
 </body>
 </html> 
-
