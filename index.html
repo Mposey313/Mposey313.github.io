@@ -75,6 +75,7 @@ body {font-family: Times New Roman;}
   <button class="tablinks" onclick="openCity(event, 'Links')">Links</button>
   <button class="tablinks" onclick="openCity(event, 'Pictures')">Pictures</button>
   <button class="tablinks" onclick="openCity(event, 'How To')">How To</button>
+  <button class="tablinks" onclick="openCity(event, 'Suggestions')">Suggestions</button>
 </div>
 
 <div id="About Me" class="tabcontent">
@@ -85,7 +86,7 @@ body {font-family: Times New Roman;}
 
 <div id="Chill Music" class="tabcontent">
   <h3>Enjoy Some Relaxing Music</h3>
-  <p><iframe width="100%" height="720" src="https://www.youtube.com/embed/_tV5LEBDs7w?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p> 
+  <p><iframe width="932" height="720" src="https://www.youtube.com/embed/_tV5LEBDs7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></p> 
 </div>
 
 <div id="Links" class="tabcontent">
@@ -269,7 +270,7 @@ img {
 <div id="How To" class="tabcontent">
 <h5>Instructional Videos</h5>
 <p>I have always wanted to build my own PC since I was a child and when I first made an attempt to build one, I needed a video to get me started. I thought I'd share that same video.</p>
-<p><iframe width="100%" height="718" src="https://www.youtube.com/embed/gO-V8E9MIBg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p><iframe width="958" height="718" src="https://www.youtube.com/embed/gO-V8E9MIBg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></p>
 <p>Things Needed for a starter PC</p>
 <p><ol>
   <li>Case</a></li>
@@ -286,7 +287,53 @@ img {
 </p>
 
 <p>
-<img src="https://images.hothardware.com/contentimages/newsitem/52077/content/small_Make-A-Wish-For-Doug-gaming-pc-build-parts.jpg" width="100%" height="600">
+<img src="https://images.hothardware.com/contentimages/newsitem/52077/content/small_Make-A-Wish-For-Doug-gaming-pc-build-parts.jpg" width="75%" height="600">
+</div>
+
+
+<div id="Suggestions" class="tabcontent">
+<h1 style="font size: 45px">Contact Form</h1>
+<p> Hello class. I am always looking for good feeback and suggestions to help make my website better. So if you have any, please fill out the form below and shoot me a message! Thank you!</p>
+<p><link href="contact-form.css" rel="stylesheet"></p>
+<p></p>
+
+
+<div class="fcf-body">
+
+    <div id="fcf-form">
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+    </form>
+    </div>
+
+</div>
+</p>
 
   <script>
 function openCity(evt, cityName) {
