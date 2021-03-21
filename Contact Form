@@ -1,4 +1,6 @@
-
+<!DOCTYPE html>
+<html>
+<head>
 <?php
 if (isset($_POST['Email'])) {
 
@@ -75,3 +77,5 @@ if (isset($_POST['Email'])) {
 <?php
 }
 ?>
+</head>
+</HTML>
