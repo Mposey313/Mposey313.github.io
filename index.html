@@ -1,34 +1,367 @@
 <!DOCTYPE html>
 <html>
 <head>
+<body style="background-color:powderblue;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  background: powderblue;
+}
 
-  <title>Home</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+.header h1 {
+  font-size: 50px;
+}
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+/* Style the header */
+.header {
+  background-color: powderblue;
+  padding: 20px;
+  text-align: center;
+}
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+body {font-family: Times New Roman;}
 
-  <!-- Template Main CSS File -->
-  <link href="style.css" rel="stylesheet">
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #808080;
+}
 
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #82CAFF;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #82CAFF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
 </head>
+<body>
+
+<div class="header">
+<h1><img src="https://www.aac-research.at/wp-content/uploads/2015/07/cropped-cropped-cropped-header_21_7_15_e1.jpg" alt="Italian Trulli"></h1>
+<p>An Aerospace Company</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Commercial Aircraft')">Commercial Aircraft</button>
+  <button class="tablinks" onclick="openCity(event, 'Business-class Aircraftc')">Business-Class Aircraft</button>
+  <button class="tablinks" onclick="openCity(event, 'Space Technology')">Space Technology</button>
+  <button class="tablinks" onclick="openCity(event, 'Advanced Technology')">Advanced Technology</button>
+  <button class="tablinks" onclick="openCity(event, 'Defensive Technologies')">Defensive Technologies</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact Us')">Contact Us</button>
+</div>
+
+<div id="Home" class="tabcontent">
+<h3>About The AAC</h3>
+<p>AAC has been around since the dawn of air travel. We gather top experts and machinery from all over the world to ensure your flight excites you.</p>
+  <p>Every aircraft is tailor-made to ensure you the best flight experience, and we clearly understand that our environment should not compromise even for the advance in technology.</p>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </div>
+  
+  <div id="Commercial Aircraft" class="tabcontent">
+<h3>A Little About Me</h3>
+<p> My name is McArthur Posey. I am currently enrolled at Southwestern University in pursuit of earning my Computer Programming Technology Degree. I currently serve in the United States Air Force. My job title is Loadmaster. I am married with two children, a boy and a girl.</p>
+  <p>A few things in life I enjoy are video games, Marvel movies and relaxing on a beach whenever I can find one. I also am very interested in technology and all the advances that it is making. Ever since I was a child I was interested in computers. I would always take apart my mother's laptops and try to upgrade their RAM or Hard Drives just doing the basic things. So, I decided why not try and get a degree in a field you love and so here I am creating a website and it's been great so far.</p>
+</div>
+
+<div id="Business-class Aircraft" class="tabcontent">
+  <h3>Enjoy Some Relaxing Music</h3>
+  <p><iframe width="932" height="720" src="https://www.youtube.com/embed/_tV5LEBDs7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></p> 
+</div>
+
+<div id="Space Technology" class="tabcontent">
+  <h3>Favorite Sites</h3>
+  <p>
+  <ol>
+  <li><a href=https://www.cbssports.com/nba/> NBA CBS</a></li>
+<li><a href=https://www.youtube.com/> The Tube</a></li>
+<li><a href=https://www.thisiswhyimbroke.com/>Things To Buy</a></li>
+</p>
+</ol>
+</div>
+
+<div id="Advanced Technology" class="tabcontent">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "Previous" to the Left */
+.prev {
+  Left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+  </style>
+<h2 style="text-align:center">A Few Photos Of Things I Enjoy</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://static.theceomagazine.net/wp-content/uploads/2019/06/12110705/Iceland-700x467.jpg" alt="Beautiful" width=50%>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://images.immediate.co.uk/production/volatile/sites/3/2019/04/Avengers-Endgame-Banner-2-de7cf60.jpg?webp=true&quality=90&resize=620%2C413" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://cdn.mos.cms.futurecdn.net/jKyZh7AmtzFheyg3GWUn3k-970-80.jpg.webp" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://media1.tenor.com/images/e660d003ad9e2336cc500fd2853cc2a5/tenor.gif" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://reviewitweb.files.wordpress.com/2017/03/parasyte1.png?w=615&h=312&crop=1" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://static2.raru.co.za/cover/2018/06/25/6722428-m.jpg?v=1529925974" style="width:50%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://static.theceomagazine.net/wp-content/uploads/2019/06/12110705/Iceland-700x467.jpg" style="width:100%" onclick="currentSlide(1)" alt="Beautiful Scenary">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://images.immediate.co.uk/production/volatile/sites/3/2019/04/Avengers-Endgame-Banner-2-de7cf60.jpg?webp=true&quality=90&resize=620%2C413" style="width:100%" onclick="currentSlide(2)" alt="Avengers">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.mos.cms.futurecdn.net/jKyZh7AmtzFheyg3GWUn3k-970-80.jpg.webp" style="width:100%" onclick="currentSlide(3)" alt="Ghost of Tushima">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://media1.tenor.com/images/e660d003ad9e2336cc500fd2853cc2a5/tenor.gif" style="width:100%" onclick="currentSlide(4)" alt="Peaceful Sunsets">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://reviewitweb.files.wordpress.com/2017/03/parasyte1.png?w=615&h=312&crop=1" style="width:100%" onclick="currentSlide(5)" alt="Parasyte Anime (Highly Recommend)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://static2.raru.co.za/cover/2018/06/25/6722428-m.jpg?v=1529925974" style="width:100%" onclick="currentSlide(6)" alt="King T'Challa (RIP)">
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="Defensive Technologies" class="tabcontent">
+<h5>Instructional Videos</h5>
+<p>I have always wanted to build my own PC since I was a child and when I first made an attempt to build one, I needed a video to get me started. I thought I'd share that same video.</p>
+<p><iframe width="958" height="718" src="https://www.youtube.com/embed/gO-V8E9MIBg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></p>
+<p>Things Needed for a starter PC</p>
+<p><ol>
+  <li>Case</a></li>
+<li>Motherboard</a></li>
+<li>GPU [Graphics Card] (if no integrated GPU)</a></li>
+<li>RAM [Memory]</a></li>
+<li>Storage Device (SSD, NVME SSD, HDD)</a></li>
+<li>Cooling (CPU, Chassis)</a></li>
+<li>PSU [Power Supply Unit]</a></li>
+<li>Display device, Monitor</a></li>
+<li>Operating System [OS]</a></li>
+<li>Input Devices, Mouse, Keyboard</a></li>
+</ol>
+</p>
+
+<p>
+<img src="https://images.hothardware.com/contentimages/newsitem/52077/content/small_Make-A-Wish-For-Doug-gaming-pc-build-parts.jpg" width="75%" height="600">
+</div>
+
+
+<div id="Contact Us" class="tabcontent">
+<link rel="stylesheet" href="contact-form.css">
+<h1 style="font size: 45px">Contact Form</h1>
+<p> Hello class. I am always looking for good feeback and suggestions to help make my website better. So if you have any, please fill out the form below and shoot me a message! Thank you!</p>
+<p><form action="mailto:contact@yourdomain.com"
+method="POST"
+enctype="multipart/form-data"
+name="EmailForm">
+    Name:<br>
+    <input type="text" size="19" name="Contact-Name"><br><br>
+    Email:<br>
+    <input type="email" name="Contact-Email"><br><br> 
+    Message:<br> 
+    <textarea name="Contact-Message" rows="6″ cols="20″>
+    </textarea><br><br> 
+    <button type="submit" value="Submit">Send</button>
+</form>  
+</p>
+
+  <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
    
 </body>
 </html>
