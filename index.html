@@ -148,11 +148,8 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 </style>
-</head>
 <body>
 
-<h2>Automatic Slideshow</h2>
-<p>Change image every 2 seconds:</p>
 
 <div class="slideshow-container">
 
@@ -174,7 +171,6 @@ img {vertical-align: middle;}
   <div class="text">A combination of both</div>
 </div>
 
-</div>
 <br>
 
 <div style="text-align:center">
@@ -201,7 +197,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 </script>
 </div>
